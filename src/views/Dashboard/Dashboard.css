@@ -1,0 +1,177 @@
+.dashboard-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  color: #111827;
+  transition: background-color 0.3s;
+}
+
+.dashboard-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .dashboard-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  margin: 0 0 8px 0;
+  color: #2563eb;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.stat-box {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 2px;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.stat-box.pending .stat-value { color: #d97706; }
+.stat-box.completed .stat-value { color: #16a34a; }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .task-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 0;
+  background-color: white;
+  border-radius: 16px;
+  border: 2px dashed #e5e7eb;
+  color: #6b7280;
+}
+
+/* Form Styles */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.form-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  font-size: 14px;
+  outline: none;
+  resize: vertical;
+}
+
+.form-textarea:focus {
+  border-color: #2563eb;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-select {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-submit-btn {
+  width: 100%;
+  padding: 12px;
+}
+
+.delete-confirm-text {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.delete-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-icon {
+  margin-right: 8px;
+}
+
+.btn-flex {
+  flex: 1;
+}
