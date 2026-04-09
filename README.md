@@ -2,6 +2,11 @@
 
 A clean, efficient, and responsive Task Management Dashboard built with React, TypeScript, and custom CSS.
 
+## Screenshot
+![Dashboard Screenshot](./asset/TaskManagementDashboard.png)
+![Dashboard Screenshot](./asset/Dashboard1.png)
+![Dashboard Screenshot](./asset/Dashboard2.png)
+
 ## Features
 
 - **Task Management:** Create, Read, Update, and Delete (CRUD) tasks.
