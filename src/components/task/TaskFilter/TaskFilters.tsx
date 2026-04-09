@@ -64,16 +64,18 @@ export const TaskFilters: React.FC<TaskFiltersProps> = ({
 
         <div className="view-toggle">
           <button 
-          aria-label="Card view"
+            aria-label="Card view"
             onClick={() => onViewModeChange('card')}
             className={`toggle-btn ${viewMode === 'card' ? 'active' : ''}`}
+            title="Card view"
           >
             <LayoutGrid size={18} />
           </button>
           <button 
-          aria-label="List view"
+            aria-label="List view"
             onClick={() => onViewModeChange('list')}
             className={`toggle-btn ${viewMode === 'list' ? 'active' : ''}`}
+            title="List view"
           >
             <List size={18} />
           </button>

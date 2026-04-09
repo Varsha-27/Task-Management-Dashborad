@@ -1,7 +1,6 @@
 import React from 'react';
 import { Pencil, Trash2, Clock, CheckCircle2, GripVertical } from 'lucide-react';
 import { format } from 'date-fns';
-
 import './TaskCard.css';
 import { Badge } from '@/components/common/Badge/Badge';
 import { Task } from '@/types';
@@ -65,10 +64,10 @@ export const TaskCard: React.FC<TaskCardProps> = ({
         </div>
 
         <div className="list-actions">
-          <button onClick={() => onEdit(task)} className="action-btn edit">
+          <button onClick={() => onEdit(task)} className="action-btn edit"  title="Edit Task">
             <Pencil size={16} />
           </button>
-          <button onClick={() => onDelete(task.id)} className="action-btn delete">
+          <button onClick={() => onDelete(task.id)} className="action-btn delete" title="Delete Task">
             <Trash2 size={16} />
           </button>
         </div>
